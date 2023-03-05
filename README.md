@@ -6,7 +6,8 @@
 
 **Sale Hive**
 <p align="center">
-    <a href="#-about-save-Hive">About Save Hive</a> •
+    <a href="https://github.com/kelvinkioko/Sale-Hive#business-description">Business Description</a> •
+    <a href="https://github.com/kelvinkioko/Sale-Hive#business-description">About Save Hive</a> •
     <a href="#-screenshots">Screenshots</a> •
     <a href="#-built-instructions">Built Instructions</a> •
     <a href="#-features">Features</a> •
