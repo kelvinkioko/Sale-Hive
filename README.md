@@ -36,6 +36,19 @@ With the ever-increasing cost of living, consumers are always looking for ways t
 ### How to measure the success of the solution:
 The success of the solution can be measured by various metrics, such as the number of users who download and use the app, the number of posts created by users, the number of retailers that partner with the platform to promote their discounts, and the overall savings achieved by users. Additionally, user feedback and ratings can provide valuable insights into the effectiveness and usefulness of the platform.
 
+## How does Sale Hive work?
+The proposed solution would be an android application that allows users to post and share information about products with the best discounts and the retail stores where they are sold. The application would allow users to search for products by category, brand, or store and filter search results based on factors such as discount percentage, location, and availability.
+
+Users would be able to create posts with information about discounted products, including product name, brand, retail store, price, discount percentage, and any other relevant details. They would also be able to upload photos of the product and share their experiences or reviews.
+
+The application would feature a social element, allowing users to follow each other, like and comment on posts, and share posts on other social media platforms. Retailers would also be able to partner with the platform and promote their discounts and promotions to users.
+
+To ensure the accuracy and relevance of the information posted on the platform, the solution could implement a moderation system where posts are reviewed and approved by moderators before being published. Additionally, users could report inaccurate or misleading posts to moderators.
+
+The success of the solution would depend on its ability to attract and retain a significant user base and foster a vibrant and engaged community. The application would need to be user-friendly, visually appealing, and feature-rich to ensure a positive user experience. Retailers would also need to see value in partnering with the platform and promoting their discounts to users.
+
+Regular data analysis of user behavior and engagement would provide insights into the effectiveness of the platform and inform future improvements and optimizations.
+
 
 ## Built Instructions 🛠
 1. Download Android Studio. Public holidays was built using Android Studio Electric Eel | 2022.1.1 Patch 1 | Build #AI-221.6008.13.2211.9514443, built on January 21, 2023 Gradle version 7.5
@@ -88,7 +101,7 @@ The success of the solution can be measured by various metrics, such as the numb
 
 ## Automation
 ### Github Actions
-The public holiday project uses [Github Actions](https://github.com/kelvinkioko/Sale-Hive/actions) for continuous integration.
+The Sale Hive project uses [Github Actions](https://github.com/kelvinkioko/Sale-Hive/actions) for continuous integration.
 
 **Contributed By:** [Kelvin Kioko](https://github.com/kelvinkioko/)
 
