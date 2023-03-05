@@ -23,6 +23,7 @@ Retailers can partner with SaleHive and promote their discounts and promotions t
 
 The success of SaleHive depends on its ability to attract and retain a significant user base and foster a vibrant and engaged community. SaleHive aims to be user-friendly, visually appealing, and feature-rich to ensure a positive user experience. With regular data analysis of user behavior and engagement, SaleHive will continuously improve and optimize the platform to provide maximum value to its users and retail partners.
 
+
 ## About Save Hive
 ### Problem Statement:
 There is a lack of a convenient and centralized platform for users to discover and share information about products with the best discounts and the retail stores where they are sold, resulting in missed opportunities for savings and frustration for consumers.
@@ -35,6 +36,7 @@ With the ever-increasing cost of living, consumers are always looking for ways t
 
 ### How to measure the success of the solution:
 The success of the solution can be measured by various metrics, such as the number of users who download and use the app, the number of posts created by users, the number of retailers that partner with the platform to promote their discounts, and the overall savings achieved by users. Additionally, user feedback and ratings can provide valuable insights into the effectiveness and usefulness of the platform.
+
 
 ## How does Sale Hive work?
 The proposed solution would be an android application that allows users to post and share information about products with the best discounts and the retail stores where they are sold. The application would allow users to search for products by category, brand, or store and filter search results based on factors such as discount percentage, location, and availability.
@@ -50,7 +52,7 @@ The success of the solution would depend on its ability to attract and retain a 
 Regular data analysis of user behavior and engagement would provide insights into the effectiveness of the platform and inform future improvements and optimizations.
 
 
-## Built Instructions 🛠
+## Built Instructions
 1. Download Android Studio. Public holidays was built using Android Studio Electric Eel | 2022.1.1 Patch 1 | Build #AI-221.6008.13.2211.9514443, built on January 21, 2023 Gradle version 7.5
 2. Clone project in the folder of your preference
     ```bash
@@ -58,7 +60,8 @@ Regular data analysis of user behavior and engagement would provide insights int
     ```
 3. Once cloning is complete, the project will download the necessary dependencies and it will be ready to run.
 
-## Features 🛠
+
+## Features
 - Uses [date.nager.at](https://date.nager.at/Api) to fetch holiday and country data
 - Get upcoming world wide public holidays
 - Get country based public holidays based on country code and specific year
@@ -66,7 +69,8 @@ Regular data analysis of user behavior and engagement would provide insights int
 - Offline mode - Application caches holidays and countries locally and can show them even when the application is offline
 - Ability to filter holidays and countries locally
 
-## Documentation 🛠
+
+## Documentation
 - [Architecture]()
   Model View ViewModel. This separates our views from business logic. It makes the different code component testable, loosely coupled and maintainable.
 - [Kotlin](https://kotlinlang.org/)
