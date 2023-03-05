@@ -6,13 +6,15 @@
 
 **Sale Hive**
 <p align="center">
-    <a href="https://github.com/kelvinkioko/Sale-Hive#business-description">Business Description</a> •
-    <a href="https://github.com/kelvinkioko/Sale-Hive#business-description">About Save Hive</a> •
-    <a href="#-screenshots">Screenshots</a> •
-    <a href="#-built-instructions">Built Instructions</a> •
-    <a href="#-features">Features</a> •
-    <a href="#-documentation">Documentation</a> •
-    <a href="#-automation">Automation</a>
+    <a href="#business-description">Business Description</a> •
+    <a href="#about-save-hive">About Save Hive</a> •
+    <a href="#how-does-sale-hive-work">How does Sale Hive work?</a> •
+    <a href="#screenshots">Screenshots</a> •
+    <a href="#built-instructions">Built Instructions</a> •
+    <a href="#features">Features</a> •
+    <a href="#documentation">Documentation</a> •
+    <a href="#automation">Automation</a> •
+    <a href="#contact">Contact</a>
 </p>
 
 ## Business Description
@@ -51,6 +53,8 @@ To ensure the accuracy and relevance of the information posted on the platform, 
 The success of the solution would depend on its ability to attract and retain a significant user base and foster a vibrant and engaged community. The application would need to be user-friendly, visually appealing, and feature-rich to ensure a positive user experience. Retailers would also need to see value in partnering with the platform and promoting their discounts to users.
 
 Regular data analysis of user behavior and engagement would provide insights into the effectiveness of the platform and inform future improvements and optimizations.
+
+## Screenshots
 
 
 ## Built Instructions
@@ -109,6 +113,7 @@ Regular data analysis of user behavior and engagement would provide insights int
 The Sale Hive project uses [Github Actions](https://github.com/kelvinkioko/Sale-Hive/actions) for continuous integration.
 
 **Contributed By:** [Kelvin Kioko](https://github.com/kelvinkioko/)
+
 
 ## Contact
 If you need any help, you can connect with me.
