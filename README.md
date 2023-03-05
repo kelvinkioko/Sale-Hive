@@ -24,16 +24,16 @@ Retailers can partner with SaleHive and promote their discounts and promotions t
 The success of SaleHive depends on its ability to attract and retain a significant user base and foster a vibrant and engaged community. SaleHive aims to be user-friendly, visually appealing, and feature-rich to ensure a positive user experience. With regular data analysis of user behavior and engagement, SaleHive will continuously improve and optimize the platform to provide maximum value to its users and retail partners.
 
 ## About Save Hive
-# Problem Statement:
+### Problem Statement:
 There is a lack of a convenient and centralized platform for users to discover and share information about products with the best discounts and the retail stores where they are sold, resulting in missed opportunities for savings and frustration for consumers.
 
-# Why it is a problem:
+### Why it is a problem:
 Consumers are often faced with the challenge of finding the best deals on products they want to purchase. In addition, retailers face the challenge of reaching customers with their latest discounts and promotions. Without a centralized platform to share and discover information about products with the best discounts and where they are sold, both consumers and retailers miss out on potential savings and sales.
 
-# Why it's critical to solve the problem:
+### Why it's critical to solve the problem:
 With the ever-increasing cost of living, consumers are always looking for ways to save money. Retailers, on the other hand, are looking for ways to increase sales and customer loyalty. By providing a convenient and centralized platform for users to discover and share information about discounted products and where they are sold, the solution can help both consumers and retailers save time and money, ultimately increasing customer satisfaction and loyalty.
 
-# How to measure the success of the solution:
+### How to measure the success of the solution:
 The success of the solution can be measured by various metrics, such as the number of users who download and use the app, the number of posts created by users, the number of retailers that partner with the platform to promote their discounts, and the overall savings achieved by users. Additionally, user feedback and ratings can provide valuable insights into the effectiveness and usefulness of the platform.
 
 
