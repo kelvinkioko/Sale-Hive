@@ -55,8 +55,8 @@ The success of the solution would depend on its ability to attract and retain a 
 Regular data analysis of user behavior and engagement would provide insights into the effectiveness of the platform and inform future improvements and optimizations.
 
 <p align="center">
-    <img src="images/product_process.jpg" width="400px" height="auto" />
-    <img src="images/user_process.jpg" width="400px" height="auto" hspace="10"/>
+    <img src="images/product_process.png" width="400px" height="auto" />
+    <img src="images/user_process.png" width="400px" height="auto" hspace="10"/>
 </p>
 
 ## Screenshots
