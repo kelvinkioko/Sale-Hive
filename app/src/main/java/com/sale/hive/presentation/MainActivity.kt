@@ -1,4 +1,4 @@
-package com.sale.hive
+package com.sale.hive.presentation
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
