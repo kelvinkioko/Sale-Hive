@@ -1,10 +1,23 @@
 package com.sale.hive.data.mapper
 
 import com.sale.hive.data.local.entity.VotesEntity
+import com.sale.hive.data.remote.dto.VotesDTO
 import com.sale.hive.domain.model.VotesModel
 
 class Votes {
     companion object Mapper {
+        fun VotesDTO.mapDTOToVotesEntity(): VotesEntity {
+            return VotesEntity(
+                voteID = voteID,
+                productID = productID,
+                userID = userID,
+                upVote = upVote,
+                downVote = downVote,
+                dateUpdated = dateUpdated,
+                dateCreated = dateCreated
+            )
+        }
+
         fun VotesModel.mapToVotesEntity(): VotesEntity {
             return VotesEntity(
                 voteID = voteID,
