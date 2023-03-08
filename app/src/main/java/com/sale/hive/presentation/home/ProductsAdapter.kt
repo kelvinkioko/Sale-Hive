@@ -2,13 +2,18 @@ package com.sale.hive.presentation.home
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.appcompat.content.res.AppCompatResources
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
+import com.sale.hive.R
 import com.sale.hive.databinding.ItemProductBinding
 import com.sale.hive.domain.model.ProductModel
 
 class ProductsAdapter : ListAdapter<ProductModel, ProductsAdapter.ViewHolder>(DIFF_UTIL) {
+
+    private val images = mutableListOf(R.drawable.samsung_two, R.drawable.microwave)
+    private var iterate: Int = 0
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder(
@@ -29,6 +34,13 @@ class ProductsAdapter : ListAdapter<ProductModel, ProductsAdapter.ViewHolder>(DI
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bind(product: ProductModel) {
             binding.apply {
+                productIcon.background = AppCompatResources.getDrawable(
+                    productIcon.context,
+                    images[iterate]
+                )
+
+                iterate = if (iterate == 0) 1 else 0
+
                 productTitle.text = product.name
                 newPrice.text = product.discountCost
                 oldPrice.text = product.originalCost

@@ -25,7 +25,7 @@
             android:layout_height="160dp"
             android:layout_gravity="center_vertical"
             android:contentDescription="Product image"
-            app:srcCompat="@drawable/microwave"
+            tools:srcCompat="@drawable/microwave"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
