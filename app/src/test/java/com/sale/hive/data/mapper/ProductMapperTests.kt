@@ -6,6 +6,7 @@ import com.sale.hive.content.ProductContent.Content.fridgeEntity
 import com.sale.hive.content.ProductContent.Content.fridgeModel
 import com.sale.hive.content.ProductContent.Content.microwaveEntity
 import com.sale.hive.content.ProductContent.Content.microwaveModel
+import com.sale.hive.content.VotesContent
 import com.sale.hive.data.mapper.ProductMapper.Mapper.mapDTOToProductEntity
 import com.sale.hive.data.mapper.ProductMapper.Mapper.mapToProductEntity
 import com.sale.hive.data.mapper.ProductMapper.Mapper.mapToProductModel
@@ -22,7 +23,14 @@ class ProductMapperTests {
 
     @Test
     fun `test mapping productEntity to productModel`() {
-        val mappedModel = microwaveEntity.mapToProductModel(productVotes = emptyList())
+        val mappedModel = microwaveEntity.mapToProductModel(
+            productVotes = mutableListOf(
+                VotesContent.microwaveVoteOneModel,
+                VotesContent.microwaveVoteTwoModel,
+                VotesContent.microwaveVoteUpVoteModel,
+                VotesContent.microwaveVoteDownVoteModel
+            )
+        )
 
         assertThat(mappedModel).isEqualTo(microwaveModel)
     }
