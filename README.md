@@ -60,7 +60,7 @@ Regular data analysis of user behavior and engagement would provide insights int
 
 ## Screenshots and Walk through
 <p align="center">
-    <img src="images/demo.gif.png" width="200px" height="auto" />
+    <img src="images/demo.gif" width="200px" height="auto" />
     <img src="images/Screenshot.png" width="200px" height="auto" hspace="10" />
 </p>
 
