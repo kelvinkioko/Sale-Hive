@@ -58,6 +58,17 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
+    def navigation_version = "2.5.3"
+    implementation "androidx.navigation:navigation-fragment-ktx:$navigation_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$navigation_version"
+
+    implementation "androidx.recyclerview:recyclerview:1.2.1"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+
+    def lifecycle_version = "2.5.1"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+
     // region: Room DB
     def room_version = "2.5.0"
     implementation "androidx.room:room-runtime:$room_version"
@@ -91,4 +102,6 @@ dependencies {
 
     def timber_version = "5.0.1"
     implementation "com.jakewharton.timber:timber:$timber_version"
+
+    testImplementation 'app.cash.turbine:turbine:0.9.0'
 }

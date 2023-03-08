@@ -38,6 +38,8 @@
             android:includeFontPadding="false"
             android:paddingVertical="4dp"
             android:textSize="18sp"
+            android:lines="3"
+            android:ellipsize="end"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/productIcon"

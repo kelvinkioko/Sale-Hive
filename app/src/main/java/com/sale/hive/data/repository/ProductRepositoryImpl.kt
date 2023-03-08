@@ -1,5 +1,6 @@
 package com.sale.hive.data.repository
 
+import com.sale.hive.R
 import com.sale.hive.data.local.dao.ProductDao
 import com.sale.hive.data.local.dao.VotesDao
 import com.sale.hive.data.local.entity.ProductEntity
@@ -13,6 +14,7 @@ import com.sale.hive.data.remote.dto.ProductDTO
 import com.sale.hive.domain.model.ProductModel
 import com.sale.hive.domain.model.VotesModel
 import com.sale.hive.domain.repository.ProductRepository
+import com.sale.hive.util.Response
 import retrofit2.HttpException
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -29,13 +31,13 @@ class ProductRepositoryImpl @Inject constructor(
         productDao.insertProduct(productEntity = productEntity)
     }
 
-    override suspend fun loadProducts(): List<ProductModel> {
+    override suspend fun loadProducts(): Response<List<ProductModel>> {
         try {
-            val remoteProducts = saleHiveApi.getProducts()
+            val remoteProducts = saleHiveApi.getProducts().products
 
-            cacheRemoteProductsAndVotes(remoteProducts = remoteProducts)
+            remoteProducts?.let { cacheRemoteProductsAndVotes(remoteProducts = remoteProducts) }
         } catch (httpException: HttpException) {
-            return emptyList()
+            return Response.Error(errorMessage = R.string.could_not_load_products)
         }
 
         val listOfProducts = mutableListOf<ProductModel>()
@@ -46,7 +48,7 @@ class ProductRepositoryImpl @Inject constructor(
             val productVotes = getListOfVotes(productID = productEntity.productID)
             listOfProducts.add(productEntity.mapToProductModel(productVotes = productVotes))
         }
-        return listOfProducts
+        return Response.Success(responseData = listOfProducts)
     }
 
     private suspend fun cacheRemoteProductsAndVotes(remoteProducts: List<ProductDTO>) {
@@ -65,11 +67,13 @@ class ProductRepositoryImpl @Inject constructor(
         return votesDao.loadVotes(productID = productID).mapToVotesModel()
     }
 
-    override suspend fun loadProduct(productID: String): ProductModel {
+    override suspend fun loadProduct(productID: String): Response<ProductModel> {
         val productEntity = productDao.loadProduct(productID = productID) ?: ProductEntity()
         val productVotes = getListOfVotes(productID = productID)
 
-        return productEntity.mapToProductModel(productVotes = productVotes)
+        return Response.Success(
+            responseData = productEntity.mapToProductModel(productVotes = productVotes)
+        )
     }
 
     override suspend fun deleteProduct(productModel: ProductModel) {
