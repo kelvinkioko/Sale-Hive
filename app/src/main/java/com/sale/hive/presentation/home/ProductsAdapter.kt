@@ -1,5 +1,6 @@
 package com.sale.hive.presentation.home
 
+import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.appcompat.content.res.AppCompatResources
@@ -43,7 +44,10 @@ class ProductsAdapter : ListAdapter<ProductModel, ProductsAdapter.ViewHolder>(DI
 
                 productTitle.text = product.name
                 newPrice.text = product.discountCost
-                oldPrice.text = product.originalCost
+                oldPrice.apply {
+                    text = product.originalCost
+                    paintFlags = paintFlags or Paint.STRIKE_THRU_TEXT_FLAG
+                }
                 upVote.text = product.votes.count { it.upVote }.toString()
                 downVote.text = product.votes.count { it.downVote }.toString()
             }

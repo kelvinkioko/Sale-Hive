@@ -6,4 +6,7 @@
     <color name="colorSecondaryVariant">#C4C5DD</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="positive">#2f9803</color>
+    <color name="negative">#A32A29</color>
 </resources>
