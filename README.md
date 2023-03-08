@@ -60,7 +60,9 @@ Regular data analysis of user behavior and engagement would provide insights int
 </p>
 
 ## Screenshots
-
+<p align="center">
+    <img src="images/Screenshot.png" width="200px" height="auto" />
+</p>
 
 ## Built Instructions
 1. Download Android Studio. Public holidays was built using Android Studio Electric Eel | 2022.1.1 Patch 1 | Build #AI-221.6008.13.2211.9514443, built on January 21, 2023 Gradle version 7.5
