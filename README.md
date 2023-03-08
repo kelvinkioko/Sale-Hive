@@ -9,7 +9,7 @@
     <a href="#business-description">Business Description</a> •
     <a href="#about-save-hive">About Save Hive</a> •
     <a href="#how-does-sale-hive-work">How does Sale Hive work?</a> •
-    <a href="#screenshots">Screenshots</a> •
+    <a href="#screenshots-and-walk-through">Screenshots</a> •
     <a href="#built-instructions">Built Instructions</a> •
     <a href="#features">Features</a> •
     <a href="#documentation">Documentation</a> •
@@ -40,7 +40,6 @@ With the ever-increasing cost of living, consumers are always looking for ways t
 ### How to measure the success of the solution:
 The success of the solution can be measured by various metrics, such as the number of users who download and use the app, the number of posts created by users, the number of retailers that partner with the platform to promote their discounts, and the overall savings achieved by users. Additionally, user feedback and ratings can provide valuable insights into the effectiveness and usefulness of the platform.
 
-
 ## How does Sale Hive work?
 The proposed solution would be an android application that allows users to post and share information about products with the best discounts and the retail stores where they are sold. The application would allow users to search for products by category, brand, or store and filter search results based on factors such as discount percentage, location, and availability.
 
@@ -59,9 +58,10 @@ Regular data analysis of user behavior and engagement would provide insights int
     <img src="images/user_process.png" width="400px" height="auto" hspace="10"/>
 </p>
 
-## Screenshots
+## Screenshots and Walk through
 <p align="center">
-    <img src="images/Screenshot.png" width="200px" height="auto" />
+    <img src="images/demo.gif.png" width="200px" height="auto" />
+    <img src="images/Screenshot.png" width="200px" height="auto" hspace="10" />
 </p>
 
 ## Built Instructions
