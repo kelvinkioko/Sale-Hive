@@ -76,7 +76,7 @@ class HomeFragment : Fragment() {
     }
 
     private fun setUpInputListeners() {
-        binding.searchCountryInput.editText?.doAfterTextChanged { searchQuery ->
+        binding.searchProductInput.editText?.doAfterTextChanged { searchQuery ->
             if (searchQuery != null && searchQuery.isNotEmpty()) {
                 viewModel.filterProducts(searchQuery = searchQuery.toString())
             } else {
