@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
-        android:text="Welcome back!" />
+        android:text="@string/welcome_back" />
 
     <TextView
         android:id="@+id/userIntroduction"
@@ -32,10 +32,10 @@
         app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
         app:layout_constraintStart_toStartOf="@id/guidelineStart"
         app:layout_constraintTop_toBottomOf="@id/yearHeadline"
-        android:text="Hi, Treasured User" />
+        android:text="@string/hi_treasured_user" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/searchCountryInput"
+        android:id="@+id/searchProductInput"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:letterSpacing="0.07"
@@ -53,7 +53,7 @@
             android:letterSpacing="0.07"
             android:singleLine="true"
             android:padding="12dp"
-            android:hint="Search product"
+            android:hint="@string/search_product"
             android:textAppearance="?attr/textAppearanceBody1"
             android:drawableEnd="@drawable/ic_search" />
 
@@ -71,7 +71,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/searchCountryInput"
+        app:layout_constraintTop_toBottomOf="@id/searchProductInput"
         app:spanCount="2"
         tools:itemCount="4"
         tools:listitem="@layout/item_product" />

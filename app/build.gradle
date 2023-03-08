@@ -103,5 +103,17 @@ dependencies {
     def timber_version = "5.0.1"
     implementation "com.jakewharton.timber:timber:$timber_version"
 
+    def coroutines_test_version = "1.6.4"
+    testImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_test_version"
+    androidTestImplementation "org.jetbrains.kotlinx:kotlinx-coroutines-test:$coroutines_test_version"
+
+    def core_testing_version = "2.1.0"
+    testImplementation "androidx.arch.core:core-testing:$core_testing_version"
+    androidTestImplementation "androidx.arch.core:core-testing:$core_testing_version"
+
+    def mockk_version = "1.13.4"
+    testImplementation "io.mockk:mockk-android:$mockk_version"
+    testImplementation "io.mockk:mockk-agent:$mockk_version"
+
     testImplementation 'app.cash.turbine:turbine:0.9.0'
 }

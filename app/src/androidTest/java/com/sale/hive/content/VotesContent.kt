@@ -1,6 +1,7 @@
 package com.sale.hive.content
 
 import com.sale.hive.data.local.entity.VotesEntity
+import com.sale.hive.data.remote.dto.VotesDTO
 import com.sale.hive.domain.model.VotesModel
 
 class VotesContent {

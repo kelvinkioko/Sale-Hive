@@ -24,7 +24,7 @@
             android:layout_width="0dp"
             android:layout_height="160dp"
             android:layout_gravity="center_vertical"
-            android:contentDescription="Product image"
+            android:contentDescription="@string/product_image"
             tools:srcCompat="@drawable/microwave"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -43,7 +43,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/productIcon"
-            android:text="Side-by-Side Refrigerator" />
+            tools:text="Side-by-Side Refrigerator" />
 
         <TextView
             android:id="@+id/newPrice"
@@ -59,7 +59,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/productTitle"
-            android:text="80,000.00 KES" />
+            tools:text="80,000.00 KES" />
 
         <TextView
             android:id="@+id/oldPrice"
@@ -73,14 +73,14 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/newPrice"
-            android:text="100,000.00 KES" />
+            tools:text="100,000.00 KES" />
 
         <ImageView
             android:id="@+id/upVoteIcon"
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_gravity="center_vertical"
-            android:contentDescription="drop_down"
+            android:contentDescription="@string/drop_down"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/oldPrice"
             app:srcCompat="@drawable/ic_arrow_up" />
@@ -104,7 +104,7 @@
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_gravity="center_vertical"
-            android:contentDescription="drop_down"
+            android:contentDescription="@string/drop_down"
             app:layout_constraintTop_toBottomOf="@+id/oldPrice"
             app:layout_constraintStart_toStartOf="@+id/guidelineVotes"
             app:srcCompat="@drawable/ic_arrow_down" />
