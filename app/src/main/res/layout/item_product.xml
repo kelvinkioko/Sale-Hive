@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="4dp" >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp">
+
+        <ImageView
+            android:id="@+id/productIcon"
+            android:layout_width="0dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="Product image"
+            tools:srcCompat="@drawable/microwave"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/productTitle"
+            style="@style/TitleTextAppearance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingVertical="4dp"
+            android:textSize="18sp"
+            android:lines="3"
+            android:ellipsize="end"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productIcon"
+            android:text="Side-by-Side Refrigerator" />
+
+        <TextView
+            android:id="@+id/newPrice"
+            style="@style/TitleTextAppearance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:paddingVertical="4dp"
+            android:textSize="18sp"
+            android:ellipsize="end"
+            android:alpha="0.9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/productTitle"
+            android:text="80,000.00 KES" />
+
+        <TextView
+            android:id="@+id/oldPrice"
+            style="@style/MainTextAppearance"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:textSize="14sp"
+            android:alpha="0.5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newPrice"
+            android:text="100,000.00 KES" />
+
+        <ImageView
+            android:id="@+id/upVoteIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="drop_down"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/oldPrice"
+            app:srcCompat="@drawable/ic_arrow_up" />
+
+        <TextView
+            android:id="@+id/upVote"
+            style="@style/TitleTextAppearance"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            app:layout_constraintTop_toTopOf="@+id/upVoteIcon"
+            app:layout_constraintStart_toEndOf="@+id/upVoteIcon"
+            app:layout_constraintEnd_toEndOf="@+id/guidelineVotes"
+            app:layout_constraintBottom_toBottomOf="@+id/upVoteIcon"
+            tools:text="100" />
+
+        <ImageView
+            android:id="@+id/downVoteIcon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="drop_down"
+            app:layout_constraintTop_toBottomOf="@+id/oldPrice"
+            app:layout_constraintStart_toStartOf="@+id/guidelineVotes"
+            app:srcCompat="@drawable/ic_arrow_down" />
+
+        <TextView
+            android:id="@+id/downVote"
+            style="@style/TitleTextAppearance"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:includeFontPadding="false"
+            android:textSize="16sp"
+            android:gravity="center_vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/downVoteIcon"
+            app:layout_constraintStart_toEndOf="@+id/downVoteIcon"
+            app:layout_constraintBottom_toBottomOf="@+id/downVoteIcon"
+            tools:text="25" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineVotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -5,6 +5,7 @@ import com.sale.hive.data.mapper.Votes.Mapper.mapToVotesEntity
 import com.sale.hive.data.mapper.Votes.Mapper.mapToVotesModel
 import com.sale.hive.domain.model.VotesModel
 import com.sale.hive.domain.repository.VotesRepository
+import com.sale.hive.util.Response
 import javax.inject.Inject
 import javax.inject.Singleton
 
@@ -18,8 +19,10 @@ class VotesRepositoryImpl @Inject constructor(
         votesDao.insertVotes(votesEntity = voteEntity)
     }
 
-    override suspend fun loadVotes(productID: String): List<VotesModel> {
-        return votesDao.loadVotes(productID = productID).mapToVotesModel()
+    override suspend fun loadVotes(productID: String): Response<List<VotesModel>> {
+        return Response.Success(
+            responseData = votesDao.loadVotes(productID = productID).mapToVotesModel()
+        )
     }
 
     override suspend fun deleteVotes(votesModel: VotesModel) {
