@@ -74,12 +74,10 @@ Regular data analysis of user behavior and engagement would provide insights int
 
 
 ## Features
-- Uses [date.nager.at](https://date.nager.at/Api) to fetch holiday and country data
-- Get upcoming world wide public holidays
-- Get country based public holidays based on country code and specific year
-- Get long weekends based on country code and specific year
-- Offline mode - Application caches holidays and countries locally and can show them even when the application is offline
-- Ability to filter holidays and countries locally
+- Uses demo API on [designer.mocky.io](https://designer.mocky.io/) to fetch remote products and votes
+- Get products, up votes and down votes
+- Offline mode - Application caches products locally and can show them even when the application is offline
+- Ability to filter products locally
 
 
 ## Documentation
@@ -120,7 +118,6 @@ Regular data analysis of user behavior and engagement would provide insights int
 The Sale Hive project uses [Github Actions](https://github.com/kelvinkioko/Sale-Hive/actions) for continuous integration.
 
 **Contributed By:** [Kelvin Kioko](https://github.com/kelvinkioko/)
-
 
 ## Contact
 If you need any help, you can connect with me.
